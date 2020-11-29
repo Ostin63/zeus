@@ -1,0 +1,94 @@
+.header {
+  height: 1117px;
+  text-align: center;
+  color: @color-white;
+  background: url('../img/Photo-bg-header.jpg') 50% 0 no-repeat;
+  box-sizing: border-box;
+}
+
+.header__block {
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 120px;
+  font-family: 'Cinzel Decorative', arial, serif;
+
+  img {
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
+
+.beer__block {
+  margin-top: 120px;
+
+  p {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .amiri {
+    font-size: 24px;
+    color: @color-yellow;
+    line-height: 1.25;
+    font-family: 'amiri slanted', arial, serif;
+  }
+}
+
+.beer {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+  }
+
+  span {
+    width: 242px;
+    height: 4px;
+    margin-top: 30px;
+    background-color: @color-yellow;
+  }
+}
+
+.scrolling {
+  width: 130px;
+  height: 45px;
+  margin: 0 auto;
+  margin-top: 290px;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+
+  p {
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'amiri slanted', arial, serif;
+    color: @color-yellow;
+    line-height: 1.872;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  &:active {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  &:focus {
+    border: rgba(255, 255, 255, 0);
+  }
+}

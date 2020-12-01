@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zeus</title>
+  <link rel="shortcut icon" href="#">
   <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
@@ -16,13 +17,16 @@
   <header>
     <h1 hidden>Сайт пива Zeus</h1>
     <div class="header">
+      <img src="img/Photo-bg-header.jpg" alt="bg">
       <div class="container">
         <div class="header__block">
-          <img src="img/logo.png" width="153" height="162" alt="logotipes">
+          <div class="wrapper">
+            <img src="img/logo.png" alt="logotipes">
+          </div>
           <div class="beer__block">
             <div class="beer">
               <span></span>
-              <p>beer</p>
+              <h2>beer</h2>
               <span></span>
             </div>
             <p>Now there's a temporary solution.</p>
@@ -37,32 +41,68 @@
     </div>
   </header>
   <main>
-    <div>
-      <h2>The joy of brewing</h2>
-      <p>We develop recipes, imported raw materials, experiment, and spills brew beer in the friendly breweries.</p>
-      <img src="" alt="">
+    <div class="main">
       <div>
-        <h2>Zeus - Original Quality</h2>
-        <p>This fancy beer in the style of American India Pale Ale. Red-copper-bodied, with citrus flavor and aroma, floral,
-        resin, pine and fruit derived from American hops.</p>
-        <button>Check more</button>
+        <div class="block__joy">
+          <div class="joy__top">
+            <div class="joy__text">
+              <h2>The joy of brewing</h2>
+              <p>We develop recipes, imported raw materials, experiment, and spills brew beer in the friendly breweries.
+              </p>
+            </div>
+            <p class="joy__img">
+              <img src="img/Photo-2.jpg" alt="Photo">
+            </p>
+          </div>
+          <div class="block__bottom">
+            <img src="img/Box-bg.png" alt="bg">
+            <div class="quality">
+              <div class="quality__text">
+                <h2>Zeus - Original Quality</h2>
+                <p>This fancy beer in the style of American India Pale Ale. Red-copper-bodied, with citrus flavor and
+                  aroma, floral,
+                  resin, pine and fruit derived from American hops.
+                </p>
+                <p>
+                  <button>check more</button>
+                </p>
+              </div>
+              <div class="bottle">
+                <img src="img/Photo-3.png" alt="bottle">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div>
-      <p>Lorem ipsum
-      dolor sit amet</p>
+    <div class="main__bottom">
+      <img src="img/Photo-4.jpg" alt="Photo">
+      <h3 class="bottom__text">Lorem ipsum dolor sit amet</h3>
     </div>
   </main>
-  <footer>
-    <h3>Handcrafteted qality</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel ornare dui, a sodales massa. Donec ut gravida
-    enim, non vestibulum magna. Mauris libero sapien, faucibus vel odio non, bibendum facilisis eros. Pellentesque eget orci
-    congue, tempor augue ultrices, pellentesque libero.
-    
-    Morbi commodo, lectus ac vulputate pharetra, libero elit aliquet tortor, ac imperdiet tortor nibh eu nunc.</p>
-    <img src="" alt="">
-    <h2>Start your journey now</h2>
-    <p>Beer now there's a temporary solution</p>
-    <button>Order Zeus</button>
+  <footer class="footer">
+    <img src="img/Photo-6.jpg" alt="Photo-bg">
+    <div class="footer__content">
+      <div class="footer__top">
+        <div class="top__text">
+          <h3>Handcrafteted qality</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel ornare dui, a sodales massa. Donec ut
+            gravida enim, non vestibulum magna. Mauris libero sapien, faucibus vel odio non, bibendum facilisis eros.
+            Pellentesque eget orci congue, tempor augue ultrices, pellentesque libero.</p>
+          <p>Morbi commodo, lectus ac vulputate
+            pharetra, libero elit aliquet tortor, ac imperdiet tortor nibh eu nunc.</p>
+        </div>
+        <div class="footer__top--img">
+          <img src="img/Photo-5.jpg" alt="Photo-bg">
+        </div>
+      </div>
+      <div class="footer__bottom container">
+        <h2>Start your journey now</h2>
+        <p>Beer now there's a temporary solution</p>
+        <p>
+          <button>order Zeus</button>
+        </p>
+      </div>
+    </div>
   </footer>
 </body>

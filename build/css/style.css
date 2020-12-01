@@ -10,6 +10,12 @@
   font-weight: 400;
   src: local("amiri slanted"), local("amiri-slanted"), url("../fonts/amiri-slanted.woff2") format("woff2"), url("../fonts/amiri-slanted.woff") format("woff");
 }
+@font-face {
+  font-family: "Amiriregular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Amiriregular"), url("../fonts/Amiriregular.woff2") format("woff2"), url("../fonts/Amiriregular.woff") format("woff");
+}
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -418,6 +424,11 @@ template {
 [hidden] {
   display: none;
 }
+.container {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
 img {
   display: block;
   max-width: 100%;
@@ -425,40 +436,80 @@ img {
   padding: 0;
   margin: 0;
 }
-.header {
-  height: 1117px;
-  text-align: center;
+h2 {
+  font-size: 3.8vw;
+  line-height: 0.833;
+  font-weight: 400;
+  font-family: 'Cinzel Decorative', arial, serif;
+}
+h3 {
+  font-size: 3.8vw;
+  line-height: 0.833;
+  font-weight: 700;
+  font-family: 'Cinzel Decorative', arial, serif;
+}
+p {
+  font-size: 1.2vw;
+  line-height: 2;
+  color: #b4ba98;
+  font-family: 'Amiriregular', arial, serif;
+}
+button {
+  max-width: 226px;
+  max-height: 61px;
+  width: 100%;
+  height: auto;
+  border: 2px solid #404429;
+  background: #272a18;
+  text-transform: uppercase;
   color: #ffffff;
-  background: url('../img/Photo-bg-header.jpg') 50% 0 no-repeat;
+  font-size: 1vw;
+  line-height: 3;
+  font-family: 'Amiriregular', arial, serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.header__block {
-  width: 720px;
-  margin: 0 auto;
-  padding-top: 120px;
-  font-family: 'Cinzel Decorative', arial, serif;
+.header {
+  position: relative;
+  color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: -5;
 }
-.header__block img {
+.header img {
+  margin: 0;
+}
+.header__block {
+  position: absolute;
+  width: 70%;
+  top: 18%;
+}
+.header__block .wrapper {
+  max-width: 20%;
+  width: 153px;
   margin: 0 auto;
-  margin-top: 15px;
+}
+.header__block .wrapper img {
+  margin: 0 auto;
+  margin-top: 2%;
 }
 .beer__block {
-  margin-top: 120px;
+  margin-top: 10%;
 }
 .beer__block p {
-  margin-top: 28px;
+  margin-top: 2%;
   text-align: center;
-  font-size: 36px;
+  font-size: 2.1vw;
+  font-family: 'Cinzel Decorative', arial, serif;
 }
 .beer__block .amiri {
-  font-size: 24px;
+  font-size: 1.5vw;
   color: #cdb378;
   line-height: 1.25;
   font-family: 'amiri slanted', arial, serif;
 }
 .beer {
-  width: 700px;
+  width: 60%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,24 +518,24 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.beer p {
+.beer h2 {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 3.5vw;
   font-weight: 900;
 }
 .beer span {
-  width: 242px;
+  width: 30%;
   height: 4px;
-  margin-top: 30px;
+  margin-top: 2%;
   background-color: #cdb378;
 }
 .scrolling {
   width: 130px;
   height: 45px;
   margin: 0 auto;
-  margin-top: 290px;
+  margin-top: 10%;
   text-align: center;
   padding: 0;
   border: 0;
@@ -493,7 +544,7 @@ img {
 }
 .scrolling p {
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 0.8vw;
   font-family: 'amiri slanted', arial, serif;
   color: #cdb378;
   line-height: 1.872;
@@ -509,4 +560,113 @@ img {
 }
 .scrolling:focus {
   border: rgba(255, 255, 255, 0);
+}
+.main {
+  background: #1a1c0f;
+}
+.block__joy {
+  padding-top: 5%;
+  text-align: left;
+  color: #ffffff;
+}
+.joy__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.joy__img {
+  margin-top: -5%;
+  margin-right: 0;
+}
+.joy__text {
+  max-width: 990px;
+  width: 100%;
+  margin-left: 10%;
+}
+.joy__text h2 {
+  margin: 0;
+  text-align: left;
+}
+.joy__text p {
+  text-align: left;
+}
+.block__bottom {
+  position: relative;
+  -webkit-box-shadow: 0px 0px 155px 0px rgba(31, 33, 43, 0.65);
+          box-shadow: 0px 0px 155px 0px rgba(31, 33, 43, 0.65);
+}
+img {
+  margin-top: -12%;
+  z-index: 15;
+}
+.quality {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.quality .quality__text {
+  max-width: 960px;
+  width: 100%;
+}
+.quality .bottle {
+  height: auto;
+  margin-top: -15%;
+  z-index: 20;
+}
+.main__bottom {
+  position: relative;
+  margin-top: 12%;
+}
+.main__bottom .bottom__text {
+  position: absolute;
+  top: 20%;
+  width: 35%;
+  right: 10%;
+  z-index: 25;
+}
+.footer {
+  position: relative;
+}
+.footer img {
+  margin-top: 0;
+}
+.footer__content {
+  position: absolute;
+  top: 2%;
+}
+.footer__top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__top .footer__top--img {
+  max-width: 980px;
+  max-height: 1013px;
+  width: 100%;
+  height: auto;
+  margin-top: -15%;
+}
+.top__text {
+  margin-left: 10%;
+}
+.top__text h3 {
+  color: #cdb378;
+}
+.footer__bottom {
+  margin-top: 10%;
+}
+.footer__bottom h2 {
+  color: #cdb378;
 }
